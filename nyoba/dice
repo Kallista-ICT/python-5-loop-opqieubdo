@@ -1,0 +1,22 @@
+import random
+
+score=0
+roll=[]
+
+print("Hello player 546,welcome to the dice game")
+print("the aim of this game is to roll a dice till it reached the number 50")
+
+while score < 50:
+
+    input("press enter to roll the dice")
+    dice = random.randint (1,6)
+    score += dice
+    roll.append(dice)
+
+    print(f"congrats player 546,you have rolled the number {dice}")
+    print(f"now your total score are {score}")
+    if 50 >= score:print(f"now do you wish to roll again,press enter to roll again")
+
+
+if score >= 50:print("congrats player 546 for your winning.you may leave now.")
+                  
